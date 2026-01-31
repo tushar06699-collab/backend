@@ -333,6 +333,11 @@ def get_issue_by_book(code):
         "issue_date": record["issueDate"],
         "due_date": record["dueDate"]
     })
+    
+@app.route("/", methods=["GET"])
+def home():
+    return "LIBRARY Backend Running", 200
+
 # ==============================
 # 🚀 RUN SERVER
 # ==============================
